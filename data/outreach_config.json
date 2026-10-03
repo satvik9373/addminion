@@ -1,0 +1,8 @@
+{
+  "mode": "dry_run",
+  "channels": {
+    "phone": true,
+    "email": true,
+    "instagram_dm": true
+  }
+}

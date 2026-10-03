@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}LeadGen Dashboard{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body>
+  <nav class="topnav">
+    <span class="brand">⚡ LeadGen</span>
+    <a href="/" class="{{ 'active' if request.path == '/' }}">Overview</a>
+    <a href="/leadgen" class="{{ 'active' if request.path == '/leadgen' }}">Lead Generation</a>
+    <a href="/outreach" class="{{ 'active' if request.path == '/outreach' }}">Outreach</a>
+    <a href="/leads" class="{{ 'active' if request.path == '/leads' }}">Leads</a>
+    <span class="health-pill" id="health-pill" title="System health">…</span>
+  </nav>
+  <main class="content">
+    {% block content %}{% endblock %}
+  </main>
+  <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

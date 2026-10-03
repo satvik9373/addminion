@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Lead Generation · LeadGen{% endblock %}
+{% block content %}
+<h1>Lead Generation</h1>
+<p class="hint">Scrape → Parse → Score → Categorize → Google Sheets. This pipeline never sends outreach.</p>
+
+<div class="pipeline-controls">
+  <button id="btn-run" class="btn btn-primary" onclick="runLeadgen()">▶ Run Now</button>
+  <button id="btn-stop" class="btn btn-danger" onclick="stopLeadgen()" disabled>■ Stop</button>
+  <span id="lg-status-label" class="status-label">idle</span>
+</div>
+
+<div class="panel">
+  <h2>Live progress</h2>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+  </div>
+  <div class="stage-list" id="stage-list"></div>
+  <pre class="log-view" id="lg-log">Waiting for a run…</pre>
+</div>
+
+<section class="panel">
+  <h2>Scheduler</h2>
+  <div class="sched-controls">
+    <button id="btn-enable" class="btn btn-primary" onclick="setScheduler('leadgen','enable')">Enable</button>
+    <button id="btn-disable" class="btn btn-danger" onclick="setScheduler('leadgen','disable')">Disable</button>
+    <label for="freq" class="inline-label">every <input id="freq" type="number" min="0.25" step="0.25" value="24" class="input inline-input"> hours</label>
+    <button class="btn" onclick="setFrequency('leadgen')">Set</button>
+  </div>
+  <ul class="muted-list">
+    <li id="sched-state">Status: …</li>
+    <li id="sched-next">Next run: …</li>
+    <li id="sched-last">Last run: …</li>
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>Run history</h2>
+  <table class="table">
+    <thead><tr><th>ID</th><th>Type</th><th>Status</th><th>Started</th><th>Finished</th><th>New leads</th><th>Error</th></tr></thead>
+    <tbody id="run-history"></tbody>
+  </table>
+</section>
+
+<script>
+  const LEADGEN = true;
+</script>
+{% endblock %}

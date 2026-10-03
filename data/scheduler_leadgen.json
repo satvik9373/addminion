@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "frequency_hours": 24,
+  "next_run_at": null,
+  "last_run_at": null,
+  "last_status": null
+}

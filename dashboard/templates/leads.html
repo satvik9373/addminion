@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Leads · LeadGen{% endblock %}
+{% block content %}
+<h1>Leads</h1>
+
+<div class="filter-row">
+  <input id="f-q" type="text" placeholder="Search name / email / brokerage…" class="input" oninput="debouncedLoad()">
+  <select id="f-source" class="input" onchange="loadLeads()"><option value="">All sources</option></select>
+  <select id="f-category" class="input" onchange="loadLeads()">
+    <option value="">All categories</option>
+    <option>High Score</option>
+    <option>Medium Score</option>
+    <option>Low Score</option>
+    <option>Disqualified</option>
+  </select>
+  <select id="f-status" class="input" onchange="loadLeads()">
+    <option value="">All statuses</option>
+    <option>new</option>
+    <option>interested</option>
+    <option>booked_call</option>
+    <option>not_interested</option>
+  </select>
+  <select id="f-contact" class="input" onchange="loadLeads()">
+    <option value="">All contacts</option>
+    <option value="contactable">Contactable</option>
+    <option value="no_contact">No Contact</option>
+    <option value="has_phone">Has Phone</option>
+    <option value="has_email">Has Email</option>
+    <option value="has_instagram">Has Instagram</option>
+  </select>
+  <button class="btn" onclick="loadLeads()">Refresh</button>
+  <span id="leads-count" class="count-pill"></span>
+</div>
+
+<table class="table">
+  <thead><tr>
+    <th>Name</th><th>Score</th><th>Category</th><th>Source</th>
+    <th>Brokerage</th><th>Phone</th><th>Email</th><th>Instagram</th>
+    <th>Email status</th><th>IG status</th><th>Status</th><th></th>
+  </tr></thead>
+  <tbody id="leads-tbody"></tbody>
+</table>
+
+<div id="lead-detail-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeDetail()">&times;</span>
+    <pre id="lead-detail-body" class="detail-json"></pre>
+  </div>
+</div>
+{% endblock %}

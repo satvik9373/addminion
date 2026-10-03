@@ -1,0 +1,1637 @@
+2026-08-09 16:19:20,818 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 16:19:20,826 - leadgen.scoring.lead_scorer - ERROR - Error scoring lead: '>=' not supported between instances of 'NoneType' and 'int'
+2026-08-09 16:19:20,828 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-09 16:21:26,937 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 16:21:26,960 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-09 16:31:12,314 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 16:31:12,332 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-09 16:38:18,568 - leadgen.scrapers.realtor_scraper - ERROR - Error fetching Apify dataset: 'list' object has no attribute 'get'
+2026-08-09 16:43:15,946 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 16:43:15,955 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-09 16:43:17,083 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 16:44:27,744 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 16:44:46,344 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 16:44:46,352 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-09 18:19:25,226 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 18:23:44,080 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-08-09 18:29:54,965 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-08-09 18:29:56,514 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-08-09 18:29:57,109 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "accessNotConfigured"
+2026-08-09 18:29:57,111 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-08-09 18:29:57,675 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "accessNotConfigured"
+2026-08-09 18:33:36,521 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-08-09 18:33:37,928 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-08-09 18:33:39,097 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "PERMISSION_DENIED"
+2026-08-09 18:36:53,375 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-08-09 18:37:46,075 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-08-09 18:38:58,904 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-08-09 18:38:58,907 - leadgen.sheets_sync - INFO - Google Sheets authentication successful
+2026-08-09 18:39:01,135 - leadgen.sheets_sync - INFO - Created 7 new tabs
+2026-08-09 18:41:26,519 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-08-09 18:41:26,525 - leadgen.sheets_sync - INFO - Google Sheets authentication successful
+2026-08-09 18:41:29,247 - leadgen.sheets_sync - INFO - Updated 3 leads in tab 'High Score (15+)'
+2026-08-09 18:41:30,089 - leadgen.sheets_sync - INFO - Updated 2 leads in tab 'Medium Score (10-14)'
+2026-08-09 18:41:30,918 - leadgen.sheets_sync - INFO - Updated 5 leads in tab 'Low Score (5-9)'
+2026-08-09 18:47:09,004 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 18:47:41,132 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 18:47:41,141 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-09 19:18:35,252 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:25:13,660 - dashboard - ERROR - Exception on /api/overview [GET]
+Traceback (most recent call last):
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\dashboard\routes.py", line 71, in overview
+    latest = db.get_latest_run()
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\leadgen\database.py", line 663, in get_latest_run
+    runs = self.get_run_history(limit=1)
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\leadgen\database.py", line 641, in get_run_history
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2026-08-09 19:28:21,644 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:28:21,713 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:28:21,717 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:29:02,583 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:29:02,595 - dashboard.runner - INFO - [pipeline] stage: Scraping
+2026-08-09 19:29:02,696 - dashboard.runner - INFO - [pipeline] stage: Parsing
+2026-08-09 19:29:02,697 - dashboard.runner - INFO - [pipeline] stage: Scoring
+2026-08-09 19:29:02,698 - dashboard.runner - INFO - [pipeline] stage: Categorizing
+2026-08-09 19:29:02,699 - dashboard.runner - INFO - [pipeline] stage: Sheets
+2026-08-09 19:29:02,699 - dashboard.runner - INFO - [pipeline] stage: Outreach
+2026-08-09 19:29:02,743 - dashboard.runner - INFO - [pipeline] complete
+2026-08-09 19:30:11,106 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:30:11,127 - dashboard.runner - INFO - [pipeline] stage: Scraping
+2026-08-09 19:30:11,128 - dashboard.runner - ERROR - [pipeline] stage Scraping failed: Apify down
+2026-08-09 19:30:11,128 - dashboard.runner - INFO - [pipeline] stage: Parsing
+2026-08-09 19:30:11,129 - dashboard.runner - INFO - [pipeline] stage: Scoring
+2026-08-09 19:30:11,130 - dashboard.runner - INFO - [pipeline] stage: Categorizing
+2026-08-09 19:30:11,130 - dashboard.runner - INFO - [pipeline] stage: Sheets
+2026-08-09 19:30:11,131 - dashboard.runner - INFO - [pipeline] stage: Outreach
+2026-08-09 19:30:11,140 - dashboard.runner - INFO - [pipeline] complete
+2026-08-09 19:33:00,383 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:33:00,403 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-09 19:33:02,787 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:33:02,828 - test_system - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\dashboard\routes.py", line 41, in index
+    return render_template('index.html')
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2026-08-09 19:33:02,960 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:33:02,968 - dashboard.runner - INFO - [pipeline] stage: Scraping
+2026-08-09 19:33:02,968 - dashboard.runner - INFO - [pipeline] stage: Parsing
+2026-08-09 19:33:02,968 - dashboard.runner - INFO - [pipeline] stage: Scoring
+2026-08-09 19:33:02,968 - dashboard.runner - INFO - [pipeline] stage: Categorizing
+2026-08-09 19:33:02,968 - dashboard.runner - INFO - [pipeline] stage: Sheets
+2026-08-09 19:33:02,969 - dashboard.runner - INFO - [pipeline] stage: Outreach
+2026-08-09 19:33:02,975 - dashboard.runner - INFO - [pipeline] complete
+2026-08-09 19:33:03,027 - dashboard.runner - INFO - [pipeline] stage: Scraping
+2026-08-09 19:33:03,028 - dashboard.runner - ERROR - [pipeline] stage Scraping failed: Apify down
+2026-08-09 19:33:03,028 - dashboard.runner - INFO - [pipeline] stage: Parsing
+2026-08-09 19:33:03,028 - dashboard.runner - INFO - [pipeline] stage: Scoring
+2026-08-09 19:33:03,028 - dashboard.runner - INFO - [pipeline] stage: Categorizing
+2026-08-09 19:33:03,029 - dashboard.runner - INFO - [pipeline] stage: Sheets
+2026-08-09 19:33:03,029 - dashboard.runner - INFO - [pipeline] stage: Outreach
+2026-08-09 19:33:03,036 - dashboard.runner - INFO - [pipeline] complete
+2026-08-09 19:33:03,079 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-09 19:33:03,081 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-09 19:33:03,412 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-09 19:33:03,413 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-09 19:33:03,441 - apscheduler.scheduler - INFO - Removed job bc86e8dc56e44eeaa38e2a9197c3b4e5
+2026-08-09 19:33:03,441 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-09 19:33:03,446 - apscheduler.scheduler - INFO - Removed job aa2286ca1a034fcc96214f0dbd3ce7ec
+2026-08-09 19:33:03,446 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-09 19:33:03,510 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:33:33,188 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 19:33:33,239 - test_system - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\dashboard\routes.py", line 41, in index
+    return render_template('index.html')
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2026-08-09 22:03:05,773 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 22:03:51,953 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 22:03:52,000 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-09 22:03:53,824 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 22:03:53,955 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 22:03:53,965 - dashboard.runner - INFO - [pipeline] stage: Scraping
+2026-08-09 22:03:53,966 - dashboard.runner - INFO - [pipeline] stage: Parsing
+2026-08-09 22:03:53,967 - dashboard.runner - INFO - [pipeline] stage: Scoring
+2026-08-09 22:03:53,967 - dashboard.runner - INFO - [pipeline] stage: Categorizing
+2026-08-09 22:03:53,968 - dashboard.runner - INFO - [pipeline] stage: Sheets
+2026-08-09 22:03:53,968 - dashboard.runner - INFO - [pipeline] stage: Outreach
+2026-08-09 22:03:53,976 - dashboard.runner - INFO - [pipeline] complete
+2026-08-09 22:03:54,024 - dashboard.runner - INFO - [pipeline] stage: Scraping
+2026-08-09 22:03:54,025 - dashboard.runner - ERROR - [pipeline] stage Scraping failed: Apify down
+2026-08-09 22:03:54,025 - dashboard.runner - INFO - [pipeline] stage: Parsing
+2026-08-09 22:03:54,025 - dashboard.runner - INFO - [pipeline] stage: Scoring
+2026-08-09 22:03:54,025 - dashboard.runner - INFO - [pipeline] stage: Categorizing
+2026-08-09 22:03:54,026 - dashboard.runner - INFO - [pipeline] stage: Sheets
+2026-08-09 22:03:54,026 - dashboard.runner - INFO - [pipeline] stage: Outreach
+2026-08-09 22:03:54,034 - dashboard.runner - INFO - [pipeline] complete
+2026-08-09 22:03:54,078 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-09 22:03:54,081 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-09 22:03:54,413 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-09 22:03:54,415 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-09 22:03:54,441 - apscheduler.scheduler - INFO - Removed job 16ae4e9bdee14ebaa011c4f59f1c2717
+2026-08-09 22:03:54,442 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-09 22:03:54,448 - apscheduler.scheduler - INFO - Removed job 519bc788afa040108ca58afd487c1dcc
+2026-08-09 22:03:54,448 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-09 22:03:54,484 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 22:22:48,994 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 22:22:49,001 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-09 22:22:49,687 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 22:22:49,734 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 22:22:49,739 - dashboard.runner - INFO - [pipeline] stage: Scraping
+2026-08-09 22:22:49,739 - dashboard.runner - INFO - [pipeline] stage: Parsing
+2026-08-09 22:22:49,740 - dashboard.runner - INFO - [pipeline] stage: Scoring
+2026-08-09 22:22:49,740 - dashboard.runner - INFO - [pipeline] stage: Categorizing
+2026-08-09 22:22:49,740 - dashboard.runner - INFO - [pipeline] stage: Sheets
+2026-08-09 22:22:49,740 - dashboard.runner - INFO - [pipeline] stage: Outreach
+2026-08-09 22:22:49,744 - dashboard.runner - INFO - [pipeline] complete
+2026-08-09 22:22:49,794 - dashboard.runner - INFO - [pipeline] stage: Scraping
+2026-08-09 22:22:49,794 - dashboard.runner - ERROR - [pipeline] stage Scraping failed: Apify down
+2026-08-09 22:22:49,795 - dashboard.runner - INFO - [pipeline] stage: Parsing
+2026-08-09 22:22:49,795 - dashboard.runner - INFO - [pipeline] stage: Scoring
+2026-08-09 22:22:49,795 - dashboard.runner - INFO - [pipeline] stage: Categorizing
+2026-08-09 22:22:49,795 - dashboard.runner - INFO - [pipeline] stage: Sheets
+2026-08-09 22:22:49,795 - dashboard.runner - INFO - [pipeline] stage: Outreach
+2026-08-09 22:22:49,800 - dashboard.runner - INFO - [pipeline] complete
+2026-08-09 22:22:49,844 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-09 22:22:49,845 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-09 22:22:50,157 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-09 22:22:50,158 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-09 22:22:50,172 - apscheduler.scheduler - INFO - Removed job ddc670007a9c41d999fb873f0596cfdf
+2026-08-09 22:22:50,173 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-09 22:22:50,183 - apscheduler.scheduler - INFO - Removed job d32dd612148041589fbf31c2c5e62100
+2026-08-09 22:22:50,183 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-09 22:22:50,204 - leadgen.database - INFO - Database tables created successfully
+2026-08-09 22:23:39,729 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 09:36:26,431 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 09:54:59,848 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 09:54:59,879 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-10 09:55:04,206 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 09:55:04,305 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 09:55:04,326 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 09:55:04,327 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 09:55:04,327 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 09:55:04,327 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 09:55:04,327 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 09:55:04,331 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 09:55:04,381 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 09:55:04,382 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-10 09:55:04,382 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 09:55:04,382 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 09:55:04,382 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 09:55:04,383 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 09:55:04,387 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 09:55:04,445 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 09:55:04,494 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 09:55:04,494 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 09:55:04,495 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 09:55:04,495 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 09:55:04,495 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 09:55:04,496 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 09:55:04,496 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 09:55:04,503 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 09:55:04,546 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 09:55:04,547 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 09:55:04,547 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 09:55:04,548 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 09:55:04,548 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 09:55:04,569 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 09:55:04,575 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 09:55:04,580 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 09:55:04,597 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 09:55:04,597 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 09:55:04,597 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 09:55:04,598 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 09:55:04,598 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 09:55:04,598 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 09:55:04,598 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 09:55:04,603 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 09:55:04,701 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 09:55:04,703 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 09:55:05,018 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 09:55:05,018 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 09:55:05,030 - apscheduler.scheduler - INFO - Removed job 4c3aa90752074b11b7ad7c9923cb5667
+2026-08-10 09:55:05,030 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 09:55:05,042 - apscheduler.scheduler - INFO - Removed job 770f7a1574324a31bd75b7365c3ef051
+2026-08-10 09:55:05,042 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 09:55:05,068 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:53,540 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:53,550 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:53,555 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:53,556 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:53,556 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:53,557 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:53,575 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-10 13:27:54,825 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:54,838 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:54,844 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:54,844 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:54,844 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:54,845 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:54,895 - test_system - ERROR - Exception on /api/overview [GET]
+Traceback (most recent call last):
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\dashboard\routes.py", line 95, in overview
+    'total_contactable': db.count_contactable_leads(),
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\leadgen\database.py", line 954, in count_contactable_leads
+    cursor.execute('''
+    ~~~~~~~~~~~~~~^^^^
+        SELECT COUNT(*) FROM leads
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+          )
+          ^
+    ''')
+    ^^^^
+sqlite3.OperationalError: no such column: instagram_handle
+2026-08-10 13:27:54,915 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:54,924 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:54,928 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:54,929 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:54,929 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:54,929 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:54,945 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 13:27:54,946 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 13:27:54,946 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 13:27:54,946 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 13:27:54,946 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-10 13:27:54,946 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 13:27:54,950 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 13:27:55,001 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 13:27:55,001 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-10 13:27:55,001 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 13:27:55,001 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 13:27:55,001 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 13:27:55,001 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-10 13:27:55,001 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 13:27:55,006 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 13:27:55,065 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,074 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,079 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,079 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,079 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,079 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,110 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 13:27:55,112 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 13:27:55,423 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 13:27:55,424 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 13:27:55,434 - apscheduler.scheduler - INFO - Removed job 672b189a08f7471b81389bd2ea89da34
+2026-08-10 13:27:55,434 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 13:27:55,436 - apscheduler.scheduler - INFO - Removed job 89545148dd6f46468fa646fe8f384cd2
+2026-08-10 13:27:55,437 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 13:27:55,457 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,469 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,474 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,474 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,474 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,474 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,526 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,534 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,538 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,538 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,539 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,539 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,568 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,577 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,582 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,583 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,583 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,583 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,597 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-10 13:27:55,597 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-10 13:27:55,597 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-10 13:27:55,597 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-10 13:27:55,616 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,624 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,629 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,629 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,629 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,629 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,671 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,680 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,685 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,685 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,686 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,686 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,729 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,737 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,742 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,742 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,743 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,743 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,781 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,790 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,794 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,794 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,794 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,795 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,833 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,841 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,845 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,845 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,846 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,846 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,890 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,899 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,904 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,904 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,904 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,904 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,943 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:55,951 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:55,955 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,955 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:55,955 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:55,956 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:55,995 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:27:56,004 - leadgen.database - ERROR - Migration failed for leads.phone_source: duplicate column name: TEXT
+2026-08-10 13:27:56,008 - leadgen.database - ERROR - Migration failed for leads.phone_last_checked: duplicate column name: TEXT
+2026-08-10 13:27:56,008 - leadgen.database - ERROR - Migration failed for leads.phone_raw: duplicate column name: TEXT
+2026-08-10 13:27:56,008 - leadgen.database - ERROR - Migration failed for leads.enrichment_status: duplicate column name: TEXT
+2026-08-10 13:27:56,008 - leadgen.database - ERROR - Migration failed for leads.enrichment_last_checked: duplicate column name: TEXT
+2026-08-10 13:30:05,689 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:05,758 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-10 13:30:06,471 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:06,545 - test_system - ERROR - Exception on /api/overview [GET]
+Traceback (most recent call last):
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\dashboard\routes.py", line 95, in overview
+    'total_contactable': db.count_contactable_leads(),
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\leadgen\database.py", line 957, in count_contactable_leads
+    cursor.execute('''
+    ~~~~~~~~~~~~~~^^^^
+        SELECT COUNT(*) FROM leads
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+          )
+          ^
+    ''')
+    ^^^^
+sqlite3.OperationalError: no such column: instagram_handle
+2026-08-10 13:30:06,566 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:06,617 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 13:30:06,617 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 13:30:06,617 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 13:30:06,617 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 13:30:06,617 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-10 13:30:06,618 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 13:30:06,621 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 13:30:06,672 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 13:30:06,672 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-10 13:30:06,672 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 13:30:06,673 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 13:30:06,673 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 13:30:06,673 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-10 13:30:06,673 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 13:30:06,677 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 13:30:06,741 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:06,808 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:30:06,809 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:30:06,809 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:30:06,809 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:30:06,809 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:30:06,809 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:30:06,810 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:30:06,810 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:30:06,810 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:30:06,813 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:30:06,861 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:30:06,862 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:30:06,862 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:30:06,862 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:30:06,862 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:30:06,862 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:30:06,862 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:30:06,877 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:30:06,882 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:30:06,886 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:30:06,912 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:30:06,913 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:30:06,913 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:30:06,913 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:30:06,913 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:30:06,913 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:30:06,913 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:30:06,913 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:30:06,913 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:30:06,917 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:30:07,005 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 13:30:07,006 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 13:30:07,318 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 13:30:07,319 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 13:30:07,330 - apscheduler.scheduler - INFO - Removed job a0c232ef173b4933837e45db785b9e60
+2026-08-10 13:30:07,330 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 13:30:07,332 - apscheduler.scheduler - INFO - Removed job 4c4307d9ab4546a0822f22fff6f2bd6f
+2026-08-10 13:30:07,332 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 13:30:07,356 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:07,446 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:07,489 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:07,517 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:07,586 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-10 13:30:07,586 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-10 13:30:07,586 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-10 13:30:07,586 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-10 13:30:07,605 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:07,685 - test_system - ERROR - Exception on /api/leads [GET]
+Traceback (most recent call last):
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\dashboard\routes.py", line 304, in leads_list
+    leads = _db().get_leads(query=q, source=source, category=category, status=status,
+                            min_score=min_score, max_score=max_score,
+    ...<2 lines>...
+                            has_instagram=has_instagram,
+                            limit=limit, offset=offset)
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\leadgen\database.py", line 628, in get_leads
+    cursor.execute(f'''
+    ~~~~~~~~~~~~~~^^^^^
+        SELECT * FROM leads
+        ^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        LIMIT ? OFFSET ?
+        ^^^^^^^^^^^^^^^^
+    ''', params)
+    ^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: instagram_handle
+2026-08-10 13:30:07,707 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:07,779 - test_system - ERROR - Exception on /api/overview [GET]
+Traceback (most recent call last):
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\dashboard\routes.py", line 95, in overview
+    'total_contactable': db.count_contactable_leads(),
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\leadgen\database.py", line 957, in count_contactable_leads
+    cursor.execute('''
+    ~~~~~~~~~~~~~~^^^^
+        SELECT COUNT(*) FROM leads
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+          )
+          ^
+    ''')
+    ^^^^
+sqlite3.OperationalError: no such column: instagram_handle
+2026-08-10 13:30:07,849 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:07,919 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:30:07,919 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:30:07,919 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:30:07,919 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:30:07,920 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:30:07,920 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:30:07,920 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:30:07,920 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:30:07,920 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:30:07,925 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:30:07,971 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:30:07,971 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:30:07,971 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:30:07,971 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:30:07,971 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:30:07,971 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:30:07,972 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:30:07,980 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:30:07,980 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:30:07,984 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:30:08,035 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:08,108 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:30:08,109 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:30:08,109 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:30:08,109 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:30:08,109 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:30:08,109 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:30:08,109 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:30:08,109 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:30:08,109 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:30:08,114 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:30:08,172 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:08,265 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:08,357 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:08,457 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:30:08,525 - test_system - ERROR - Exception on /api/overview [GET]
+Traceback (most recent call last):
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Satvik chaturvedi\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\dashboard\routes.py", line 95, in overview
+    'total_contactable': db.count_contactable_leads(),
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Satvik chaturvedi\OneDrive\Documents\Lead-System\leadgen\database.py", line 957, in count_contactable_leads
+    cursor.execute('''
+    ~~~~~~~~~~~~~~^^^^
+        SELECT COUNT(*) FROM leads
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+          )
+          ^
+    ''')
+    ^^^^
+sqlite3.OperationalError: no such column: instagram_handle
+2026-08-10 13:37:37,786 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:37,855 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-10 13:37:38,536 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:38,630 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:38,680 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 13:37:38,680 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 13:37:38,681 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 13:37:38,681 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 13:37:38,681 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-10 13:37:38,681 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 13:37:38,685 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 13:37:38,736 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 13:37:38,736 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-10 13:37:38,736 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 13:37:38,736 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 13:37:38,736 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 13:37:38,736 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-10 13:37:38,736 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 13:37:38,740 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 13:37:38,800 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:38,867 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:37:38,868 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:37:38,868 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:37:38,868 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:37:38,868 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:37:38,868 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:37:38,868 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:37:38,869 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:37:38,869 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:37:38,872 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:37:38,919 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:37:38,919 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:37:38,919 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:37:38,920 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:37:38,920 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:37:38,920 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:37:38,920 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:37:38,936 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:37:38,940 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:37:38,944 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:37:38,970 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:37:38,971 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:37:38,971 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:37:38,971 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:37:38,971 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:37:38,971 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:37:38,971 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:37:38,971 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:37:38,971 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:37:38,975 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:37:39,061 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 13:37:39,062 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 13:37:39,376 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 13:37:39,376 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 13:37:39,386 - apscheduler.scheduler - INFO - Removed job 5c3bf757673a43bea24e598f6f62bc98
+2026-08-10 13:37:39,386 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 13:37:39,389 - apscheduler.scheduler - INFO - Removed job 3aae709ea31a44faa1402ce786397fa4
+2026-08-10 13:37:39,389 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 13:37:39,408 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:39,496 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:39,542 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:39,569 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:39,634 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-10 13:37:39,634 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-10 13:37:39,634 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-10 13:37:39,634 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-10 13:37:39,652 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:39,745 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:39,831 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:39,904 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:37:39,904 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:37:39,904 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:37:39,904 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:37:39,905 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:37:39,905 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:37:39,905 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:37:39,905 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:37:39,905 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:37:39,909 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:37:39,956 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:37:39,956 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:37:39,956 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:37:39,956 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:37:39,957 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:37:39,957 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:37:39,957 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:37:39,964 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:37:39,965 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:37:39,968 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:37:40,020 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:40,085 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 13:37:40,085 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 13:37:40,085 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 13:37:40,086 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 13:37:40,086 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 13:37:40,086 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 13:37:40,086 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 13:37:40,086 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 13:37:40,086 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 13:37:40,097 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 13:37:40,151 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:40,235 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:40,327 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 13:37:40,427 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:40,045 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:40,109 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-10 14:10:40,900 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:41,008 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:41,058 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 14:10:41,058 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 14:10:41,058 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 14:10:41,059 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 14:10:41,059 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-10 14:10:41,059 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 14:10:41,063 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 14:10:41,114 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 14:10:41,115 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-10 14:10:41,115 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 14:10:41,115 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 14:10:41,115 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 14:10:41,116 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-10 14:10:41,116 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 14:10:41,121 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 14:10:41,180 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:41,260 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:10:41,260 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:10:41,260 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:10:41,261 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:10:41,261 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:10:41,261 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:10:41,262 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:10:41,262 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:10:41,262 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:10:41,267 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:10:41,311 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:10:41,312 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:10:41,312 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:10:41,312 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:10:41,313 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:10:41,313 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:10:41,313 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:10:41,332 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:10:41,336 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:10:41,340 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:10:41,363 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:10:41,363 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:10:41,363 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:10:41,363 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:10:41,363 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:10:41,363 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:10:41,363 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:10:41,363 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:10:41,363 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:10:41,368 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:10:41,454 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 14:10:41,455 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 14:10:41,769 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 14:10:41,770 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 14:10:41,783 - apscheduler.scheduler - INFO - Removed job 5c246df33bbf4a4faeb3c7e28c8f83e9
+2026-08-10 14:10:41,784 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 14:10:41,786 - apscheduler.scheduler - INFO - Removed job c3e4a30b548c4842bde9d3947ef25210
+2026-08-10 14:10:41,786 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 14:10:41,807 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:41,907 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:41,951 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:41,978 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:42,054 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-10 14:10:42,054 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-10 14:10:42,054 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-10 14:10:42,054 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-10 14:10:42,073 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:42,168 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:42,266 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:42,334 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:10:42,334 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:10:42,334 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:10:42,334 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:10:42,335 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:10:42,335 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:10:42,335 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:10:42,335 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:10:42,335 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:10:42,340 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:10:42,387 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:10:42,388 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:10:42,388 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:10:42,388 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:10:42,388 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:10:42,388 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:10:42,388 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:10:42,397 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:10:42,397 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:10:42,401 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:10:42,454 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:42,526 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:10:42,527 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:10:42,527 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:10:42,527 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:10:42,527 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:10:42,527 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:10:42,527 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:10:42,527 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:10:42,527 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:10:42,531 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:10:42,592 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:42,690 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:42,782 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:10:42,893 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:26,450 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:26,522 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-10 14:24:27,265 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:27,378 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:27,429 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 14:24:27,430 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 14:24:27,430 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 14:24:27,430 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 14:24:27,430 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-10 14:24:27,431 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 14:24:27,436 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 14:24:27,484 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-10 14:24:27,485 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-10 14:24:27,485 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-10 14:24:27,485 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-10 14:24:27,485 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-10 14:24:27,485 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-10 14:24:27,486 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-10 14:24:27,490 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-10 14:24:27,550 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:27,625 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:24:27,625 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:24:27,625 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:24:27,625 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:24:27,626 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:24:27,626 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:24:27,626 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:24:27,626 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:24:27,626 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:24:27,630 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:24:27,677 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:24:27,677 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:24:27,677 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:24:27,677 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:24:27,678 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:24:27,678 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:24:27,678 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:24:27,694 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:24:27,698 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:24:27,702 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:24:27,729 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:24:27,729 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:24:27,729 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:24:27,729 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:24:27,730 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:24:27,730 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:24:27,730 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:24:27,730 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:24:27,730 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:24:27,734 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:24:27,816 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 14:24:27,817 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 14:24:28,131 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-10 14:24:28,131 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-10 14:24:28,145 - apscheduler.scheduler - INFO - Removed job 1e53d8aaff924b2b9c837171d1058ab3
+2026-08-10 14:24:28,145 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 14:24:28,148 - apscheduler.scheduler - INFO - Removed job 84abee617953445181fec330172e439e
+2026-08-10 14:24:28,148 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-10 14:24:28,170 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:28,263 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:28,308 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:28,337 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:28,411 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-10 14:24:28,412 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-10 14:24:28,412 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-10 14:24:28,412 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-10 14:24:28,431 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:28,530 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:28,625 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:28,703 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:24:28,704 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:24:28,704 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:24:28,704 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:24:28,704 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:24:28,705 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:24:28,705 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:24:28,705 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:24:28,705 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:24:28,709 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:24:28,755 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:24:28,755 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:24:28,756 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:24:28,756 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:24:28,756 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:24:28,756 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:24:28,756 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:24:28,764 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:24:28,764 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:24:28,769 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:24:28,821 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:28,893 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-10 14:24:28,893 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-10 14:24:28,893 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-10 14:24:28,893 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-10 14:24:28,894 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-10 14:24:28,894 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-10 14:24:28,894 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-10 14:24:28,894 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-10 14:24:28,894 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-10 14:24:28,898 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-10 14:24:28,962 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:29,053 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:29,151 - leadgen.database - INFO - Database tables created successfully
+2026-08-10 14:24:29,255 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:01:56,344 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:01:56,416 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-11 23:02:00,887 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:01,052 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:01,116 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:02:01,117 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:02:01,117 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:02:01,117 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:02:01,118 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:02:01,118 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:02:01,125 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:02:01,172 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:02:01,172 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-11 23:02:01,172 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:02:01,173 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:02:01,173 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:02:01,173 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:02:01,174 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:02:01,180 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:02:01,247 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:01,350 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:02:01,351 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:02:01,351 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:02:01,351 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:02:01,352 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:02:01,352 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:02:01,353 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:02:01,353 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:02:01,353 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:02:01,360 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:02:01,403 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:02:01,403 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:02:01,404 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:02:01,404 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:02:01,405 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:02:01,405 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:02:01,405 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:02:01,431 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:02:01,438 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:02:01,444 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:02:01,455 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:02:01,456 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:02:01,456 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:02:01,456 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:02:01,457 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:02:01,457 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:02:01,457 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:02:01,457 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:02:01,457 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:02:01,462 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:02:01,571 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:02:01,573 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:02:01,886 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:02:01,887 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:02:01,897 - apscheduler.scheduler - INFO - Removed job 3ec40889f8664ce783f1b5a7e440a909
+2026-08-11 23:02:01,897 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:02:01,907 - apscheduler.scheduler - INFO - Removed job af60668998ed46e897689f49d1da0efc
+2026-08-11 23:02:01,907 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:02:01,936 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:02,063 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:02,118 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:02,154 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:02,239 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-11 23:02:02,240 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-11 23:02:02,240 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-11 23:02:02,240 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-11 23:02:02,266 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:02,391 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:02,515 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:02,607 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:02:02,608 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:02:02,608 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:02:02,608 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:02:02,608 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:02:02,608 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:02:02,609 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:02:02,609 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:02:02,609 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:02:02,613 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:02:02,659 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:02:02,659 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:02:02,659 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:02:02,660 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:02:02,660 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:02:02,660 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:02:02,660 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:02:02,671 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:02:02,671 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:02:02,676 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:02:02,729 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:02,830 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:02:02,830 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:02:02,831 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:02:02,831 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:02:02,831 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:02:02,831 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:02:02,831 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:02:02,831 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:02:02,831 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:02:02,836 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:02:02,899 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:03,017 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:03,138 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:02:03,268 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:03,658 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:03,751 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-11 23:09:05,112 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:05,249 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:05,312 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:09:05,313 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:09:05,313 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:09:05,314 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:09:05,314 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:09:05,314 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:09:05,320 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:09:05,371 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:09:05,372 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-11 23:09:05,372 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:09:05,372 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:09:05,372 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:09:05,373 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:09:05,373 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:09:05,378 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:09:05,438 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:05,512 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:09:05,514 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:09:05,831 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:09:05,832 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:09:05,841 - apscheduler.scheduler - INFO - Removed job fc5a06074c11438daa4f9a14d1f204aa
+2026-08-11 23:09:05,841 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:09:05,854 - apscheduler.scheduler - INFO - Removed job 04eac891606b40e0aaf7a3748bc05b31
+2026-08-11 23:09:05,855 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:09:05,881 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:05,988 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:06,052 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:06,078 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:06,146 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-11 23:09:06,146 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-11 23:09:06,146 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-11 23:09:06,147 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-11 23:09:06,170 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:06,274 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:06,372 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:06,473 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:06,572 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:06,668 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:06,765 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:06,869 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:23,875 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:23,901 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-11 23:09:24,716 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:24,835 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:24,895 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:09:24,895 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:09:24,895 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:09:24,896 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:09:24,896 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:09:24,896 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:09:24,900 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:09:24,950 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:09:24,951 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-11 23:09:24,951 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:09:24,951 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:09:24,951 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:09:24,951 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:09:24,951 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:09:24,955 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:09:25,019 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:25,104 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:09:25,104 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:09:25,104 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:09:25,104 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:09:25,105 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:09:25,105 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:09:25,105 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:09:25,105 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:09:25,105 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:09:25,109 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:09:25,156 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:09:25,156 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:09:25,156 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:09:25,157 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:09:25,157 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:09:25,157 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:09:25,157 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:09:25,174 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:09:25,179 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:09:25,183 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:09:25,207 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:09:25,208 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:09:25,208 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:09:25,208 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:09:25,208 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:09:25,208 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:09:25,208 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:09:25,208 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:09:25,208 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:09:25,213 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:09:25,307 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:09:25,309 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:09:25,627 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:09:25,628 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:09:25,641 - apscheduler.scheduler - INFO - Removed job 7346025731dc46f097e53cccc3aa6d5a
+2026-08-11 23:09:25,641 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:09:25,644 - apscheduler.scheduler - INFO - Removed job 8db91f414e494158b923cb3c515fb70c
+2026-08-11 23:09:25,644 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:09:25,670 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:25,794 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:25,854 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:25,891 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:25,977 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-11 23:09:25,977 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-11 23:09:25,977 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-11 23:09:25,977 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-11 23:09:26,000 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:26,133 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:26,260 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:26,356 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:09:26,357 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:09:26,357 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:09:26,357 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:09:26,357 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:09:26,358 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:09:26,358 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:09:26,358 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:09:26,358 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:09:26,363 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:09:26,409 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:09:26,409 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:09:26,409 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:09:26,410 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:09:26,410 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:09:26,410 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:09:26,411 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:09:26,420 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:09:26,420 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:09:26,425 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:09:26,477 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:26,572 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:09:26,572 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:09:26,572 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:09:26,573 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:09:26,573 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:09:26,573 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:09:26,573 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:09:26,573 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:09:26,573 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:09:26,578 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:09:26,642 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:26,753 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:26,879 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:27,005 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:09:50,064 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:10:21,292 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:20,109 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:20,198 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-11 23:12:21,186 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:21,344 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:21,415 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:12:21,415 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:12:21,416 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:12:21,416 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:12:21,416 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:12:21,416 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:12:21,424 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:12:21,470 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:12:21,470 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-11 23:12:21,470 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:12:21,470 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:12:21,471 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:12:21,471 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:12:21,471 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:12:21,477 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:12:21,539 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:21,657 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:12:21,658 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:12:21,658 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:12:21,658 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:12:21,659 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:12:21,659 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:12:21,659 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:12:21,659 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:12:21,659 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:12:21,665 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:12:21,713 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:12:21,714 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:12:21,714 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:12:21,714 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:12:21,714 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:12:21,714 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:12:21,715 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:12:21,748 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:12:21,753 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:12:21,759 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:12:21,812 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:12:21,813 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:12:21,813 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:12:21,813 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:12:21,813 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:12:21,813 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:12:21,813 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:12:21,813 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:12:21,813 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:12:21,818 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:12:21,935 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:12:21,936 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:12:22,250 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:12:22,251 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:12:22,264 - apscheduler.scheduler - INFO - Removed job 5bd8ddda6813486289b0c9f43c4e0f53
+2026-08-11 23:12:22,264 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:12:22,267 - apscheduler.scheduler - INFO - Removed job ccaaec0c33624d5fa8eccd2a01edf644
+2026-08-11 23:12:22,267 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:12:22,292 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:22,403 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:22,500 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:22,615 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:22,671 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:22,704 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:22,794 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-11 23:12:22,794 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-11 23:12:22,794 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-11 23:12:22,794 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-11 23:12:22,815 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:22,933 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:23,049 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:23,136 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:12:23,136 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:12:23,137 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:12:23,137 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:12:23,137 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:12:23,137 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:12:23,137 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:12:23,137 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:12:23,138 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:12:23,142 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:12:23,189 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:12:23,189 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:12:23,189 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:12:23,190 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:12:23,190 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:12:23,190 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:12:23,190 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:12:23,202 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:12:23,202 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:12:23,207 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:12:23,261 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:23,383 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:12:23,384 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:12:23,384 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:12:23,384 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:12:23,384 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:12:23,384 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:12:23,385 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:12:23,385 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:12:23,385 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:12:23,390 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:12:23,452 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:23,573 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:23,695 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:12:23,817 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:04,054 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:04,127 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-11 23:18:05,343 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:05,478 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:05,575 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:18:05,576 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:18:05,576 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:18:05,577 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:18:05,577 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:18:05,577 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:18:05,586 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:18:05,631 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:18:05,631 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-11 23:18:05,632 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:18:05,632 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:18:05,632 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:18:05,632 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:18:05,633 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:18:05,638 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:18:05,700 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:05,808 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:18:05,809 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:18:05,809 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:18:05,810 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:18:05,811 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:18:05,811 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:18:05,811 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:18:05,811 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:18:05,812 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:18:05,819 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:18:05,861 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:18:05,862 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:18:05,862 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:18:05,863 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:18:05,864 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:18:05,864 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:18:05,864 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:18:05,888 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:18:05,893 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:18:05,897 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:18:05,912 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:18:05,913 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:18:05,913 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:18:05,913 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:18:05,913 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:18:05,913 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:18:05,914 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:18:05,914 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:18:05,914 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:18:05,919 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:18:06,005 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:18:06,007 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:18:06,325 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:18:06,327 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:18:06,346 - apscheduler.scheduler - INFO - Removed job 2649984588a2496ca6512c46a94f2298
+2026-08-11 23:18:06,346 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:18:06,349 - apscheduler.scheduler - INFO - Removed job 9e2b817bb5c24bf0adcf3f0bd1a87db9
+2026-08-11 23:18:06,350 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:18:06,378 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:06,511 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:06,640 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:06,759 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:06,839 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:06,892 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:07,031 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-11 23:18:07,031 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-11 23:18:07,032 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-11 23:18:07,032 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-11 23:18:07,059 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:07,210 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:07,547 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:07,671 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:18:07,671 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:18:07,672 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:18:07,672 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:18:07,673 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:18:07,673 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:18:07,674 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:18:07,674 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:18:07,674 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:18:07,680 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:18:07,725 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:18:07,726 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:18:07,726 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:18:07,726 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:18:07,727 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:18:07,727 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:18:07,728 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:18:07,738 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:18:07,738 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:18:07,746 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:18:07,794 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:07,906 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:18:07,906 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:18:07,907 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:18:07,907 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:18:07,907 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:18:07,907 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:18:07,907 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:18:07,907 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:18:07,907 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:18:07,912 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:18:07,972 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:08,112 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:08,250 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:18:08,388 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:01,617 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:01,687 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-11 23:25:03,314 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:03,439 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:03,509 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:25:03,509 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:25:03,510 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:25:03,510 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:25:03,510 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:25:03,510 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:25:03,516 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:25:03,565 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:25:03,565 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-11 23:25:03,566 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:25:03,566 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:25:03,566 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:25:03,566 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:25:03,566 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:25:03,572 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:25:03,631 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:03,721 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:25:03,721 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:25:03,721 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:25:03,721 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:25:03,722 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:25:03,722 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:25:03,722 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:25:03,722 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:25:03,722 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:25:03,727 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:25:03,774 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:25:03,774 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:25:03,774 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:25:03,774 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:25:03,775 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:25:03,775 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:25:03,775 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:25:03,792 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:25:03,798 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:25:03,803 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:25:03,828 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:25:03,828 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:25:03,828 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:25:03,828 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:25:03,828 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:25:03,829 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:25:03,829 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:25:03,829 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:25:03,829 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:25:03,835 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:25:03,923 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:25:03,924 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:25:04,237 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:25:04,238 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:25:04,251 - apscheduler.scheduler - INFO - Removed job 3274b2fd16554bbb842ab78b722e6bcd
+2026-08-11 23:25:04,252 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:25:04,255 - apscheduler.scheduler - INFO - Removed job 08956b81ecc94d4599ea1f14159a5a15
+2026-08-11 23:25:04,255 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:25:04,278 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:04,397 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:04,509 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:04,623 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:04,690 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:04,725 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:04,819 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-11 23:25:04,819 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-11 23:25:04,819 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-11 23:25:04,820 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-11 23:25:04,841 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:04,961 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:05,086 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:05,186 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:25:05,187 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:25:05,187 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:25:05,188 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:25:05,189 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:25:05,189 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:25:05,189 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:25:05,189 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:25:05,189 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:25:05,194 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:25:05,236 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:25:05,237 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:25:05,237 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:25:05,237 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:25:05,238 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:25:05,238 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:25:05,238 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:25:05,255 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:25:05,255 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:25:05,260 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:25:05,304 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:05,399 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:25:05,400 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:25:05,400 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:25:05,400 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:25:05,400 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:25:05,400 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:25:05,401 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:25:05,401 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:25:05,401 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:25:05,406 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:25:05,465 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:05,610 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:05,753 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:25:05,903 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:55,010 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:55,099 - leadgen.outreach.demo_generator - INFO - Generated demo for lead Test Agent
+2026-08-11 23:37:56,392 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:56,509 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:56,576 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:37:56,576 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:37:56,577 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:37:56,577 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:37:56,577 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:37:56,577 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:37:56,583 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:37:56,632 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scraping
+2026-08-11 23:37:56,632 - dashboard.leadgen_runner - ERROR - [leadgen] stage Scraping failed: Apify down
+2026-08-11 23:37:56,633 - dashboard.leadgen_runner - INFO - [leadgen] stage: Parsing
+2026-08-11 23:37:56,633 - dashboard.leadgen_runner - INFO - [leadgen] stage: Scoring
+2026-08-11 23:37:56,633 - dashboard.leadgen_runner - INFO - [leadgen] stage: Categorizing
+2026-08-11 23:37:56,633 - dashboard.leadgen_runner - INFO - [leadgen] stage: Contact Enrichment
+2026-08-11 23:37:56,634 - dashboard.leadgen_runner - INFO - [leadgen] stage: Google Sheets Sync
+2026-08-11 23:37:56,639 - dashboard.leadgen_runner - INFO - [leadgen] complete
+2026-08-11 23:37:56,700 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:56,794 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:37:56,794 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:37:56,795 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:37:56,795 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:37:56,795 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:37:56,796 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:37:56,796 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:37:56,796 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:37:56,796 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:37:56,800 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:37:56,846 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:37:56,847 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:37:56,847 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:37:56,847 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:37:56,848 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:37:56,848 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:37:56,848 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:37:56,868 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:37:56,873 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:37:56,878 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:37:56,896 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:37:56,896 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:37:56,896 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:37:56,897 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:37:56,897 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:37:56,897 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:37:56,897 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:37:56,897 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:37:56,897 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:37:56,901 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:37:56,986 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:37:56,988 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:37:57,302 - apscheduler.scheduler - INFO - Scheduler started
+2026-08-11 23:37:57,302 - apscheduler.scheduler - INFO - Added job "SchedulerManager._on_tick" to job store "default"
+2026-08-11 23:37:57,317 - apscheduler.scheduler - INFO - Removed job 623f9a6b59c44a63a25a2927b22d1014
+2026-08-11 23:37:57,317 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:37:57,319 - apscheduler.scheduler - INFO - Removed job 2e86d8265cd9493a9f30242885c606be
+2026-08-11 23:37:57,320 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-08-11 23:37:57,348 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:57,456 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:57,543 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:57,645 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:57,700 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:57,731 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:57,818 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead z: provider on fire
+2026-08-11 23:37:57,818 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead a: provider on fire
+2026-08-11 23:37:57,818 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead b: provider on fire
+2026-08-11 23:37:57,818 - leadgen.enrichment.contact_enricher - WARNING - [enrich] provider Boom failed for lead c: provider on fire
+2026-08-11 23:37:57,837 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:57,942 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:58,042 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:58,123 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:37:58,123 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:37:58,123 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:37:58,123 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:37:58,124 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:37:58,124 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:37:58,124 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:37:58,124 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:37:58,124 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:37:58,129 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:37:58,175 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:37:58,175 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:37:58,175 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:37:58,175 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:37:58,176 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:37:58,176 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:37:58,176 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:37:58,184 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:37:58,184 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:37:58,190 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:37:58,238 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:58,321 - dashboard.outreach_runner - INFO - [outreach] stage: Query Leads
+2026-08-11 23:37:58,321 - dashboard.outreach_runner - INFO - [outreach] stage: Check Eligibility
+2026-08-11 23:37:58,321 - dashboard.outreach_runner - INFO - [outreach] stage: Check Contact Availability
+2026-08-11 23:37:58,321 - dashboard.outreach_runner - INFO - [outreach] stage: Check History
+2026-08-11 23:37:58,321 - dashboard.outreach_runner - INFO - [outreach] stage: Build Queue
+2026-08-11 23:37:58,321 - dashboard.outreach_runner - INFO - [outreach] stage: Phone Tasks
+2026-08-11 23:37:58,321 - dashboard.outreach_runner - INFO - [outreach] stage: Email
+2026-08-11 23:37:58,321 - dashboard.outreach_runner - INFO - [outreach] stage: Instagram
+2026-08-11 23:37:58,322 - dashboard.outreach_runner - INFO - [outreach] stage: Record Results
+2026-08-11 23:37:58,325 - dashboard.outreach_runner - INFO - [outreach] complete
+2026-08-11 23:37:58,388 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:58,500 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:58,617 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:37:58,732 - leadgen.database - INFO - Database tables created successfully
+2026-08-11 23:42:08,940 - leadgen.enrichment.providers.realtor_profile - WARNING - [enrich] realtor.com blocked profile fetch for https://www.realtor.com/realestateagents/3160273 (HTTP 429)
+2026-08-11 23:42:11,353 - leadgen.enrichment.providers.realtor_profile - WARNING - [enrich] realtor.com blocked profile fetch for https://www.realtor.com/realestateagents/1490589 (HTTP 429)
+2026-08-11 23:42:13,772 - leadgen.enrichment.providers.realtor_profile - WARNING - [enrich] realtor.com blocked profile fetch for https://www.realtor.com/realestateagents/516501 (HTTP 429)
+2026-08-11 23:42:16,041 - leadgen.enrichment.providers.realtor_profile - WARNING - [enrich] realtor.com blocked profile fetch for https://www.realtor.com/realestateagents/1935771 (HTTP 429)
+2026-08-11 23:42:18,536 - leadgen.enrichment.providers.realtor_profile - WARNING - [enrich] realtor.com blocked profile fetch for https://www.realtor.com/realestateagents/1404009 (HTTP 429)
+2026-08-11 23:42:19,915 - leadgen.enrichment.providers.realtor_profile - WARNING - [enrich] realtor.com blocked profile fetch for https://www.realtor.com/realestateagents/800284 (HTTP 429)
+2026-08-11 23:42:22,101 - leadgen.enrichment.providers.realtor_profile - WARNING - [enrich] realtor.com blocked profile fetch for https://www.realtor.com/realestateagents/1821659 (HTTP 429)
+2026-08-11 23:42:24,079 - leadgen.enrichment.providers.realtor_profile - WARNING - [enrich] realtor.com blocked profile fetch for https://www.realtor.com/realestateagents/1341425 (HTTP 429)
+2026-08-11 23:42:24,129 - leadgen.main - WARNING - Contact enrichment provider errors (8):
+2026-08-11 23:42:24,130 - leadgen.main - WARNING -   - https://www.realtor.com/realestateagents/3160273: RealtorProfileProvider: realtor.com refused profile fetch (HTTP 429)
+2026-08-11 23:42:24,130 - leadgen.main - WARNING -   - https://www.realtor.com/realestateagents/1490589: RealtorProfileProvider: realtor.com refused profile fetch (HTTP 429)
+2026-08-11 23:42:24,130 - leadgen.main - WARNING -   - https://www.realtor.com/realestateagents/516501: RealtorProfileProvider: realtor.com refused profile fetch (HTTP 429)
+2026-08-11 23:42:24,130 - leadgen.main - WARNING -   - https://www.realtor.com/realestateagents/1935771: RealtorProfileProvider: realtor.com refused profile fetch (HTTP 429)
+2026-08-11 23:42:24,130 - leadgen.main - WARNING -   - https://www.realtor.com/realestateagents/1404009: RealtorProfileProvider: realtor.com refused profile fetch (HTTP 429)
+2026-08-11 23:42:24,130 - leadgen.main - WARNING -   - https://www.realtor.com/realestateagents/800284: RealtorProfileProvider: realtor.com refused profile fetch (HTTP 429)
+2026-08-11 23:42:24,130 - leadgen.main - WARNING -   - https://www.realtor.com/realestateagents/1821659: RealtorProfileProvider: realtor.com refused profile fetch (HTTP 429)
+2026-08-11 23:42:24,130 - leadgen.main - WARNING -   - https://www.realtor.com/realestateagents/1341425: RealtorProfileProvider: realtor.com refused profile fetch (HTTP 429)

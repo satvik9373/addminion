@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %}Outreach · LeadGen{% endblock %}
+{% block content %}
+<h1>Outreach</h1>
+<p class="hint">Processes existing qualified leads only. Dry Run previews the queue and sends nothing; Live actually sends via email / Instagram.</p>
+
+<div class="pipeline-controls">
+  <button id="btn-run" class="btn btn-primary" onclick="runOutreach()">▶ Run Now</button>
+  <button id="btn-stop" class="btn btn-danger" onclick="stopOutreach()" disabled>■ Stop</button>
+  <span id="og-status-label" class="status-label">idle</span>
+  <span class="mode-badge" id="mode-badge">dry_run</span>
+</div>
+
+<section class="panel">
+  <h2>Mode & channels</h2>
+  <div class="mode-controls">
+    <label class="radio"><input type="radio" name="mode" value="dry_run" checked> <b>Dry Run</b> — build & preview queue, send nothing</label>
+    <label class="radio"><input type="radio" name="mode" value="live"> <b>Live</b> — actually send (requires confirmation)</label>
+    <button class="btn" onclick="setMode()">Save mode</button>
+  </div>
+  <div class="channel-controls">
+    <label class="check"><input type="checkbox" id="ch-phone" checked> Phone</label>
+    <label class="check"><input type="checkbox" id="ch-email" checked> Email</label>
+    <label class="check"><input type="checkbox" id="ch-instagram" checked> Instagram DM</label>
+    <button class="btn" onclick="setChannels()">Save channels</button>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>Channel readiness</h2>
+  <div class="channel-breakdown" id="channel-breakdown">Loading…</div>
+</section>
+
+<div class="panel">
+  <h2>Live progress</h2>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+  </div>
+  <div class="stage-list" id="stage-list"></div>
+  <div class="outreach-counts" id="og-counts"></div>
+  <pre class="log-view" id="og-log">Waiting for a run…</pre>
+</div>
+
+<section class="panel">
+  <h2>Phone call tasks (manual)</h2>
+  <p class="hint">Phone is a call task only — the dashboard never auto-dials or sends SMS. Use <b>Mark Called</b> once the call is done (idempotent) or <b>Skip</b> to keep it retryable.</p>
+  <table class="table">
+    <thead><tr><th>Name</th><th>Number</th><th>Company</th><th>Source</th><th>Status</th><th></th></tr></thead>
+    <tbody id="phone-tasks-tbody"><tr><td colspan="6">Run the outreach pipeline to build phone tasks.</td></tr></tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Queue preview (what would be sent)</h2>
+  <table class="table">
+    <thead><tr><th>Name</th><th>Channel</th><th>Touch</th><th>To</th></tr></thead>
+    <tbody id="queue-tbody"><tr><td colspan="4">No queue built yet.</td></tr></tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Scheduler</h2>
+  <div class="sched-controls">
+    <button id="btn-enable" class="btn btn-primary" onclick="setScheduler('outreach','enable')">Enable</button>
+    <button id="btn-disable" class="btn btn-danger" onclick="setScheduler('outreach','disable')">Disable</button>
+    <label for="freq" class="inline-label">every <input id="freq" type="number" min="0.25" step="0.25" value="24" class="input inline-input"> hours</label>
+    <button class="btn" onclick="setFrequency('outreach')">Set</button>
+  </div>
+  <ul class="muted-list">
+    <li id="sched-state">Status: …</li>
+    <li id="sched-next">Next run: …</li>
+    <li id="sched-last">Last run: …</li>
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>Run history</h2>
+  <table class="table">
+    <thead><tr><th>ID</th><th>Type</th><th>Status</th><th>Started</th><th>Finished</th><th>Error</th></tr></thead>
+    <tbody id="run-history"></tbody>
+  </table>
+</section>
+
+<script>
+  const OUTREACH = true;
+</script>
+{% endblock %}

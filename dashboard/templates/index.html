@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Overview · LeadGen{% endblock %}
+{% block content %}
+<h1>Overview</h1>
+
+<section class="stat-grid" id="stat-cards">
+  <div class="stat"><div class="num" id="s-total">–</div><div class="lbl">Total leads</div></div>
+  <div class="stat"><div class="num" id="s-high">–</div><div class="lbl">High score</div></div>
+  <div class="stat"><div class="num" id="s-medium">–</div><div class="lbl">Medium score</div></div>
+  <div class="stat"><div class="num" id="s-low">–</div><div class="lbl">Low score</div></div>
+  <div class="stat"><div class="num" id="s-disq">–</div><div class="lbl">Disqualified</div></div>
+  <div class="stat"><div class="num" id="s-qualified">–</div><div class="lbl">Qualified</div></div>
+  <div class="stat"><div class="num" id="s-contactable">–</div><div class="lbl">Contactable</div></div>
+  <div class="stat"><div class="num" id="s-phone">–</div><div class="lbl">Has Phone</div></div>
+  <div class="stat"><div class="num" id="s-email">–</div><div class="lbl">Has Email</div></div>
+  <div class="stat"><div class="num" id="s-instagram">–</div><div class="lbl">Has Instagram</div></div>
+  <div class="stat"><div class="num" id="s-no-contact">–</div><div class="lbl">No Contact</div></div>
+  <div class="stat"><div class="num" id="s-contacted">–</div><div class="lbl">Contacted</div></div>
+  <div class="stat"><div class="num" id="s-replies">–</div><div class="lbl">Replies</div></div>
+</section>
+
+<div class="two-col">
+  <section class="panel">
+    <h2>⚙ Lead Generation</h2>
+    <div id="lg-status" class="run-status">Loading…</div>
+    <ul class="muted-list">
+      <li id="lg-last">Last run: …</li>
+      <li id="lg-next">Next scheduled: …</li>
+      <li id="lg-sched">Scheduler: …</li>
+    </ul>
+    <p><a href="/leadgen">Open Lead Generation →</a></p>
+  </section>
+
+  <section class="panel">
+    <h2>📤 Outreach</h2>
+    <div id="og-status" class="run-status">Loading…</div>
+    <div class="outreach-mini" id="og-stats"></div>
+    <ul class="muted-list">
+      <li id="og-mode">Mode: …</li>
+      <li id="og-last">Last run: …</li>
+      <li id="og-next">Next scheduled: …</li>
+      <li id="og-sched">Scheduler: …</li>
+    </ul>
+    <p><a href="/outreach">Open Outreach →</a></p>
+  </section>
+</div>
+
+<section class="panel">
+  <h2>System health</h2>
+  <div id="health-issues" class="health-issues"></div>
+</section>
+
+<script>
+  const OVERVIEW = true;
+</script>
+{% endblock %}

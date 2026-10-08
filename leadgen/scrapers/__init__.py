@@ -1,11 +1,15 @@
-"""
-Lead Scrapers Module
-Handles scraping from various sources mentioned in ICP document
-"""
+"""Compatibility package for legacy discovery providers."""
 
-from .brokerage_scraper import BrokerageScraper
-from .zillow_scraper import ZillowScraper
-from .realtor_scraper import RealtorScraper
-from .job_post_scraper import JobPostScraper
+from discovery.legacy_scrapers import (
+    BrokerageScraper,
+    JobPostScraper,
+    RealtorScraper,
+    ZillowScraper,
+)
 
-__all__ = ['BrokerageScraper', 'ZillowScraper', 'RealtorScraper', 'JobPostScraper']
+__all__ = [
+    'BrokerageScraper',
+    'JobPostScraper',
+    'RealtorScraper',
+    'ZillowScraper',
+]

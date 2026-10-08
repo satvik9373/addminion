@@ -10,23 +10,151 @@ Scrape ──► Parse ──► Score ──► Categorize ──► Enrich Con
 
 ---
 
-## ✅ What's Already Working (verified live)
+## Configuration and credentials
 
-- **Apify API key** authenticates (`satviikkk`)
-- **Zillow scraper** → `igolaizola~zillow-scraper-ppe` (104k+ runs)
-- **Realtor.com agents scraper** → `cleansyntax~realtor-com-agents-scraper` (4k+ runs)
-- **Live scrape confirmed**: pulled 10 real Beverly Hills agents, parsed, scored, categorized correctly
-- **25/25 automated tests pass** (`py test_system.py`)
+Credentials are intentionally not stored in this repository. Configure them through
+environment variables or a local `.env` file that is excluded by `.gitignore`.
+If a Google service account is needed, store its JSON file outside version control
+and point `GOOGLE_SHEETS_CREDENTIALS_PATH` at that local file.
 
-## ✅ All credentials configured
+---
 
-| Item | Status |
-|------|--------|
-| **SMTP email** | `codequarry00@gmail.com` — login tested OK |
-| **Google Sheets** | Service account + spreadsheet "Lead-Gen" — sync verified live, tabs auto-created |
-| **Instagram account** | `coxdeee` — set (cold-DM browser path) |
-| **Instagram token + IG ID** | Valid, warm-DM API path ready |
-| **Apify** | Valid, live scrape verified |
+## Repository structure
+
+The repository is organized by responsibility while retaining compatibility
+imports for the current lead-generation workflow:
+
+```text
+application/                 Application orchestration
+  legacy_pipeline.py         Existing LeadGenSystem workflow
+  services/                  Constructor-injected product use cases
+  composition.py             Composition root for the new services
+core/                        Stable domain-facing ports/protocols
+  domain/                    Product business models
+  mappers/                   Legacy-to-domain translations
+adapters/                    Legacy and in-memory port adapters
+config/                      Central environment loading and settings
+persistence/                 SQLite adapter (schema and behavior preserved)
+  postgres.py                PostgreSQL repositories (production foundation)
+  mappers.py                 Explicit row-to-domain mappings
+migrations/                  Version-controlled PostgreSQL foundation SQL
+integrations/                Google Sheets and isolated legacy outreach
+discovery/                   Isolated legacy scraping/discovery providers
+qualification/               Isolated legacy scoring implementation
+leadgen/enrichment/          Existing contact enrichment implementation
+dashboard/                   Flask UI, runners, routes, and schedulers
+test_system.py               Existing system-level tests
+```
+
+The current real-estate scraping, scoring, enrichment, Sheets, email, and
+Instagram workflow is intentionally retained under `legacy_*` packages.
+`leadgen/*` compatibility modules keep existing imports and API entry points
+working while new application services can adopt the interfaces in
+`core/ports.py`. The future product flow can therefore be added around these
+boundaries without implementing authentication, onboarding, ICP/AI processing,
+or Firecrawl in this phase.
+
+The new application services are wired by
+`application.composition.build_in_memory_application`. This composition root
+constructs repositories and services from injected capabilities; services do
+not instantiate databases, scrapers, or external integrations.
+
+### Production persistence foundation
+
+The intended production database is PostgreSQL (including managed PostgreSQL
+through Supabase later), because the product needs relational queries,
+foreign-key ownership, indexes, and a durable multi-tenant boundary. The
+versioned foundation migration is
+`migrations/001_initial_persistence.sql`. It creates users, workspaces, and
+the current domain resource tables with `workspace_id` ownership.
+
+`persistence/postgres.py` implements the repository ports with explicit
+domain/row mapping and an injected connection factory. Set
+`POSTGRES_DATABASE_URL` locally or in the deployment environment; it is never
+stored in source control. SQLite remains the active legacy pipeline store and
+is not migrated by this phase. Authentication is intentionally only a future
+boundary: `workspaces.owner_user_id` is ready to associate data after an
+authenticated user exists, without implementing sessions or credentials here.
+
+### Authentication and tenant context
+
+The production direction is **Supabase Auth with PostgreSQL**, while
+authentication remains outside this application. `application/auth.py`
+defines provider-neutral `AuthenticatedIdentity`, `AuthContext`, and
+`WorkspaceContext` values. `SupabaseAuthAdapter` accepts an injected verified
+token function; it does not store passwords or expose service-role
+credentials. `adapters/flask_auth.py` is the only Flask-specific boundary and
+places an authenticated context on the request only after the identity is
+mapped to a local `users` record.
+
+`WorkspaceResolver` resolves a requested workspace only when it is owned by
+the authenticated user, otherwise it fails closed. User-owned lead
+application services receive `WorkspaceContext` explicitly rather than
+reading request globals or trusting client-supplied ownership fields.
+Migration `002_auth_identity_mapping.sql` stores only the external provider
+and subject mapping; it does not duplicate authentication credentials.
+
+### First product flow: provisioning and onboarding
+
+The first product flow is available as an explicitly wired protected API:
+
+```text
+AuthenticatedIdentity
+  -> UserProvisioningService
+  -> default Workspace
+  -> OnboardingService
+  -> OnboardingProfile
+```
+
+`UserProvisioningService` is idempotent for an external provider and subject.
+`OnboardingService` stores either a website URL or no-website inputs such as
+niche, target service, and an ICP description/reference. It does not crawl,
+parse, or call an AI provider.
+
+The protected endpoints are:
+
+- `GET /api/onboarding`
+- `POST /api/onboarding`
+- `POST /api/onboarding/ready`
+
+They are registered through the optional `onboarding_dependencies` argument
+to `dashboard.create_app`, so existing legacy dashboard routes remain
+unchanged. The endpoint adapter resolves ownership from the authenticated
+identity and server-side workspace repository, never from arbitrary client
+user IDs.
+
+### Production authentication wiring
+
+Production construction is available through
+`dashboard.create_production_app()`. It wires:
+
+```text
+SupabaseJWTVerifier
+  -> SupabaseAuthAdapter
+  -> UserProvisioningService
+  -> WorkspaceResolver
+  -> OnboardingService
+  -> protected onboarding API
+```
+
+Required production configuration is provided through environment variables:
+
+```env
+SUPABASE_PROJECT_URL=https://<project>.supabase.co
+SUPABASE_JWKS_URL=
+SUPABASE_JWT_AUDIENCE=authenticated
+```
+
+`SUPABASE_JWKS_URL` is optional and defaults to the Supabase project JWKS
+endpoint. JWT signatures are verified using the JWKS-selected public key,
+with issuer, audience, expiration, subject, and issued-at claims validated.
+Malformed, expired, incorrectly signed, or incorrectly scoped tokens return
+HTTP 401 without exposing verification details.
+
+Production provisioning uses database uniqueness constraints for provider
+identity and `(owner_user_id, name)` for default workspaces. PostgreSQL
+`ON CONFLICT` upserts make repeated and concurrent first-time requests
+resolve to the same local user and workspace without process-global locks.
 
 ---
 
@@ -45,21 +173,21 @@ pip install beautifulsoup4 requests selenium jinja2 pandas lxml google-auth goog
 
 ## 2. Configure `.env`
 
-A `.env` file already exists in `leadgen/` with your Apify key, SMTP password, and IG token. Edit it to add the missing values:
+Create a local `.env` file (or export environment variables) and fill in the values needed for your deployment:
 
 ```env
 # --- Email ---
 SMTP_SERVER=smtp.gmail.com
 SMTP_PORT=587
 SMTP_USERNAME=          # ← FILL THIS: your sending email address
-SMTP_PASSWORD=          # already set (Gmail app password)
+SMTP_PASSWORD=          # Gmail app password
 
 # --- Google Sheets ---
-GOOGLE_SHEETS_CREDENTIALS_PATH=credentials/google-service-account.json
+GOOGLE_SHEETS_CREDENTIALS_PATH=       # local path, never commit the JSON file
 GOOGLE_SHEETS_ID=       # ← FILL THIS: the spreadsheet ID
 
 # --- Instagram ---
-INSTAGRAM_ACCESS_TOKEN= # ← REGENERATE (current token is rejected by Meta)
+INSTAGRAM_ACCESS_TOKEN= # optional; set locally if warm-DM API access is needed
 INSTAGRAM_IG_ID=        # ← FILL THIS: your IG business account ID
 INSTA_USERNAME=         # ← FILL THIS: new dedicated outreach account
 INSTA_PASSWORD=         # ← FILL THIS
@@ -71,12 +199,10 @@ INSTA_PASSWORD=         # ← FILL THIS
 3. Google Account → Security → **App passwords** → generate one for "Mail".
 4. Put the app password (16 chars, like `abcd efgh ijkl mnop`) in `SMTP_PASSWORD`, and the full email address in `SMTP_USERNAME`.
 
-> The `SMTP_PASSWORD` you already shared works with whatever Gmail account owns it — it just needs to be paired with the right `SMTP_USERNAME`.
-
 ### Google Sheets setup
 1. Go to [console.cloud.google.com](https://console.cloud.google.com/) → create a **project**.
 2. **Enable APIs**: Google Sheets API + Google Drive API.
-3. **Create credentials** → Service Account → download the JSON → save as `credentials/google-service-account.json`.
+3. **Create credentials** → Service Account → download the JSON and save it outside this repository.
 4. Create a spreadsheet in Google Sheets. Its **ID** is in the URL: `docs.google.com/spreadsheets/d/<THIS_IS_THE_ID>/edit`.
 5. Put the ID in `GOOGLE_SHEETS_ID`.
 6. **Share the spreadsheet** with the service account email (it looks like `name@project.iam.gserviceaccount.com`) — give it **Editor** access.
@@ -88,13 +214,12 @@ Leads scoring below 5 are **not deleted** — they land in the `Disqualified (<5
 
 ### Instagram setup
 - **Cold DMs** (new prospects): the system uses **browser automation** with a **new dedicated account's username + password**. Meta's official API forbids unsolicited DMs, so the token can't do cold outreach — only warm replies. Create the account, fill `INSTA_USERNAME` / `INSTA_PASSWORD`.
-- **Warm-lead DMs / account validation** (the `GraphAPIClient`): you need a **valid** long-lived access token (`IGAA...`) and the business account's **IG ID**. Your current token is rejected by Meta (`Failed to decrypt`) — regenerate it at [developers.facebook.com](https://developers.facebook.com/), or via the Graph API Explorer. Store it in `INSTAGRAM_ACCESS_TOKEN` and the numeric account ID in `INSTAGRAM_IG_ID`.
+- **Warm-lead DMs / account validation** (the `GraphAPIClient`): you need a **valid** long-lived access token and the business account's **IG ID**. Generate the token through [developers.facebook.com](https://developers.facebook.com/) or the Graph API Explorer, then store it in `INSTAGRAM_ACCESS_TOKEN` and store the numeric account ID in `INSTAGRAM_IG_ID`.
 
 ## 3. Run the tests
 
 ```bash
 py test_system.py          # 25/25 should pass (core + dashboard + phone/enrichment)
-py test_apify_live.py      # live Apify smoke test (consumes ~1 small scrape)
 ```
 
 ## 3b. Web Dashboard

@@ -454,7 +454,7 @@ class OutreachRunner:
         db = self.system.db
         ig = self.system.instagram_dm
         if not ig:
-            from leadgen.outreach.instagram_dm import InstagramDM
+            from integrations.legacy_outreach.instagram_dm import InstagramDM
             ig = InstagramDM(self.system.config)
             self.system.instagram_dm = ig
         for item in items:

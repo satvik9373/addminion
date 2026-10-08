@@ -15,6 +15,6 @@ Weekly workflow:
 __version__ = '0.1.0'
 __author__ = 'Ember Systems'
 
-from .main import LeadGenSystem
+from application.legacy_pipeline import LeadGenSystem
 
 __all__ = ['LeadGenSystem']

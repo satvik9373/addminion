@@ -1,9 +1,7 @@
-"""
-Outreach Automation Module
-"""
+"""Compatibility package for the isolated legacy outreach integrations."""
 
-from .email_sender import EmailSender
-from .instagram_dm import InstagramDM
-from .demo_generator import DemoGenerator
+from integrations.legacy_outreach.demo_generator import DemoGenerator
+from integrations.legacy_outreach.email_sender import EmailSender
+from integrations.legacy_outreach.instagram_dm import InstagramDM
 
 __all__ = ['EmailSender', 'InstagramDM', 'DemoGenerator']

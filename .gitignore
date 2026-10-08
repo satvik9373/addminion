@@ -1,0 +1,48 @@
+# Environment and credentials
+.env
+.env.*
+!.env.example
+credentials/
+*.pem
+*.key
+*.p12
+*.json.key
+
+# Local databases and runtime data
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs, caches, and local runtime files
+logs/
+*.log
+*.cache
+*.tmp
+*.temp
+*.pid
+*.pidfile
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

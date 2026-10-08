@@ -22,9 +22,9 @@ logger = logging.getLogger(__name__)
 DEFAULT_PORT = int(os.environ.get('DASHBOARD_PORT', '5001'))
 
 
-def create_app(config_path: str = None) -> Flask:
+def create_app(config_path: str = None, *, onboarding_dependencies=None) -> Flask:
     """Build the Flask app with two runners + two schedulers wired up."""
-    from leadgen.main import LeadGenSystem
+    from application.legacy_pipeline import LeadGenSystem
     from .leadgen_runner import LeadGenerationRunner
     from .outreach_runner import OutreachRunner
     from .scheduler import SchedulerManager
@@ -59,8 +59,20 @@ def create_app(config_path: str = None) -> Flask:
     from .routes import pages, api
     app.register_blueprint(pages)
     app.register_blueprint(api)
+    if onboarding_dependencies is not None:
+        from .onboarding import register_onboarding_api
+        register_onboarding_api(app, onboarding_dependencies)
 
     return app
+
+
+def create_production_app(config_path: str = None) -> Flask:
+    """Create the dashboard with production PostgreSQL/auth onboarding wiring."""
+    from application.composition import build_production_onboarding_dependencies
+    return create_app(
+        config_path,
+        onboarding_dependencies=build_production_onboarding_dependencies(),
+    )
 
 
 def main():

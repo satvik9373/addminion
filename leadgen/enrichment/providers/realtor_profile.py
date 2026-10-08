@@ -14,7 +14,7 @@ profile. phone_verified is left unset — we have no verification mechanism.
 import logging
 from typing import Dict, Optional
 
-from ...scrapers.realtor_scraper import RealtorScraper
+from discovery.legacy_scrapers.realtor_scraper import RealtorScraper
 
 logger = logging.getLogger(__name__)
 

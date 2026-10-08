@@ -19,6 +19,7 @@ def create_directory_structure():
         'data/leads',
         'data/demos',
         'data/cache',
+        'config',
     ]
 
     for directory in directories:
@@ -30,7 +31,7 @@ def create_env_file():
     env_content = """# LeadGen System Environment Configuration
 
 # === Google Sheets Configuration ===
-GOOGLE_SHEETS_CREDENTIALS_PATH=credentials/google-service-account.json
+GOOGLE_SHEETS_CREDENTIALS_PATH=  # Path to a locally stored service-account JSON file
 GOOGLE_SHEETS_ID=  # Your Google Sheets ID here
 
 # === Email Configuration (SMTP) ===
@@ -72,7 +73,6 @@ def create_requirements_file():
         "google-api-python-client>=2.116.0",
         "jinja2>=3.1.3",
         "python-dotenv>=1.0.0",
-        "webdriver-manager>=4.1.4",
         "tqdm>=4.66.2",
     ]
 
@@ -135,7 +135,7 @@ For Instagram DM automation:
 2. DO NOT use your main personal account
 3. Add a profile picture and bio (appears more legitimate)
 4. Add username/password to your .env file
-5. Chrome/Chromedriver will be needed (auto-installed by webdriver-manager)
+5. Chrome/Chromedriver will be needed (Selenium Manager can assist with driver setup)
 
 Warning: Instagram may temporarily block accounts using automation.
 Use cautiously on non-personal accounts.

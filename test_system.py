@@ -329,7 +329,7 @@ def _make_dashboard_app():
     return app, stub
 
 
-_SECRET_MARKERS = ['vixp ycrs hnmf mlqo', 'IGAATOB', 'apify_api_',
+_SECRET_MARKERS = ['REDACTED_SMTP_PASSWORD', 'REDACTED_INSTAGRAM_TOKEN', 'apify_api_',
                    'BEGIN PRIVATE KEY', 'SMTP_PASSWORD']
 
 
